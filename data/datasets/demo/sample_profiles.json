@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Rahul Sharma",
+    "career_goal": "Data Scientist",
+    "cgpa": 8.7,
+    "skills": ["Python", "SQL", "Pandas", "NumPy"],
+    "projects": 3,
+    "certifications": 1,
+    "interests": ["Data Science", "Artificial Intelligence"],
+    "experience_level": "Intermediate"
+  },
+  {
+    "id": 2,
+    "name": "Priya Verma",
+    "career_goal": "AI/ML Engineer",
+    "cgpa": 8.4,
+    "skills": ["Python", "Machine Learning", "TensorFlow", "Statistics"],
+    "projects": 4,
+    "certifications": 2,
+    "interests": ["Artificial Intelligence", "Machine Learning"],
+    "experience_level": "Intermediate"
+  },
+  {
+    "id": 3,
+    "name": "Arjun Singh",
+    "career_goal": "Frontend Developer",
+    "cgpa": 7.9,
+    "skills": ["HTML", "CSS", "JavaScript", "React"],
+    "projects": 3,
+    "certifications": 1,
+    "interests": ["Web Development", "Frontend Design"],
+    "experience_level": "Intermediate"
+  },
+  {
+    "id": 4,
+    "name": "Sneha Gupta",
+    "career_goal": "Backend Developer",
+    "cgpa": 8.2,
+    "skills": ["Python", "FastAPI", "SQL", "Git"],
+    "projects": 2,
+    "certifications": 1,
+    "interests": ["Backend Development", "System Design"],
+    "experience_level": "Intermediate"
+  },
+  {
+    "id": 5,
+    "name": "Karan Mehta",
+    "career_goal": "Full Stack Developer",
+    "cgpa": 8.0,
+    "skills": ["HTML", "CSS", "JavaScript", "React", "Node.js"],
+    "projects": 5,
+    "certifications": 2,
+    "interests": ["Full Stack Development", "Startups"],
+    "experience_level": "Advanced"
+  },
+  {
+    "id": 6,
+    "name": "Ananya Kapoor",
+    "career_goal": "Data Analyst",
+    "cgpa": 8.8,
+    "skills": ["Excel", "SQL", "Power BI", "Data Visualization"],
+    "projects": 2,
+    "certifications": 2,
+    "interests": ["Business Analytics", "Data Analysis"],
+    "experience_level": "Intermediate"
+  },
+  {
+    "id": 7,
+    "name": "Vikas Yadav",
+    "career_goal": "Cybersecurity Analyst",
+    "cgpa": 7.8,
+    "skills": ["Networking", "Linux", "Cybersecurity", "Risk Analysis"],
+    "projects": 3,
+    "certifications": 1,
+    "interests": ["Cybersecurity", "Ethical Hacking"],
+    "experience_level": "Intermediate"
+  },
+  {
+    "id": 8,
+    "name": "Aditi Sharma",
+    "career_goal": "Cloud Engineer",
+    "cgpa": 8.5,
+    "skills": ["AWS", "Linux", "Cloud Computing", "Docker"],
+    "projects": 3,
+    "certifications": 2,
+    "interests": ["Cloud Computing", "Infrastructure"],
+    "experience_level": "Intermediate"
+  },
+  {
+    "id": 9,
+    "name": "Rohan Malhotra",
+    "career_goal": "DevOps Engineer",
+    "cgpa": 8.1,
+    "skills": ["Docker", "Kubernetes", "AWS", "Git"],
+    "projects": 4,
+    "certifications": 2,
+    "interests": ["DevOps", "Automation"],
+    "experience_level": "Advanced"
+  },
+  {
+    "id": 10,
+    "name": "Neha Jain",
+    "career_goal": "Mobile App Developer",
+    "cgpa": 8.3,
+    "skills": ["Flutter", "Dart", "Firebase", "API Integration"],
+    "projects": 3,
+    "certifications": 1,
+    "interests": ["Mobile Development", "App Design"],
+    "experience_level": "Intermediate"
+  },
+  {
+    "id": 11,
+    "name": "Ishita Agarwal",
+    "career_goal": "UI/UX Designer",
+    "cgpa": 8.6,
+    "skills": ["Figma", "Wireframing", "Prototyping", "Design Thinking"],
+    "projects": 4,
+    "certifications": 2,
+    "interests": ["UI/UX Design", "User Research"],
+    "experience_level": "Advanced"
+  },
+  {
+    "id": 12,
+    "name": "Aditya Bansal",
+    "career_goal": "QA Engineer",
+    "cgpa": 7.7,
+    "skills": ["Manual Testing", "Test Cases", "Bug Tracking"],
+    "projects": 2,
+    "certifications": 1,
+    "interests": ["Software Testing", "Quality Assurance"],
+    "experience_level": "Beginner"
+  }
+]

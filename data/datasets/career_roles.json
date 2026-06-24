@@ -1,0 +1,181 @@
+{
+  "Data Scientist": {
+    "description": "Uses statistics, programming, and machine learning to analyze data and solve business problems.",
+    "average_salary": "8-15 LPA",
+    "industry_demand": "High",
+    "difficulty": "High",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Statistics",
+      "Machine Learning",
+      "Pandas",
+      "NumPy",
+      "Data Visualization"
+    ]
+  },
+
+  "Data Analyst": {
+    "description": "Analyzes datasets, creates dashboards, and helps organizations make data-driven decisions.",
+    "average_salary": "5-10 LPA",
+    "industry_demand": "High",
+    "difficulty": "Medium",
+    "required_skills": [
+      "Excel",
+      "SQL",
+      "Power BI",
+      "Python",
+      "Statistics",
+      "Data Visualization"
+    ]
+  },
+
+  "AI/ML Engineer": {
+    "description": "Designs, develops, and deploys machine learning models and AI systems.",
+    "average_salary": "10-18 LPA",
+    "industry_demand": "Very High",
+    "difficulty": "High",
+    "required_skills": [
+      "Python",
+      "Machine Learning",
+      "Deep Learning",
+      "TensorFlow",
+      "PyTorch",
+      "Statistics",
+      "SQL"
+    ]
+  },
+
+  "Frontend Developer": {
+    "description": "Builds responsive and interactive user interfaces for websites and web applications.",
+    "average_salary": "4-12 LPA",
+    "industry_demand": "High",
+    "difficulty": "Medium",
+    "required_skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Git",
+      "Responsive Design"
+    ]
+  },
+
+  "Backend Developer": {
+    "description": "Develops APIs, databases, and server-side systems powering applications.",
+    "average_salary": "6-14 LPA",
+    "industry_demand": "High",
+    "difficulty": "Medium",
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "SQL",
+      "API Development",
+      "Git",
+      "Database Management"
+    ]
+  },
+
+  "Full Stack Developer": {
+    "description": "Works on both frontend and backend technologies to build complete applications.",
+    "average_salary": "6-16 LPA",
+    "industry_demand": "Very High",
+    "difficulty": "High",
+    "required_skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "SQL",
+      "Git"
+    ]
+  },
+
+  "Cybersecurity Analyst": {
+    "description": "Protects systems and networks from cyber threats and security vulnerabilities.",
+    "average_salary": "6-14 LPA",
+    "industry_demand": "High",
+    "difficulty": "High",
+    "required_skills": [
+      "Networking",
+      "Linux",
+      "Cybersecurity",
+      "Ethical Hacking",
+      "Security Tools",
+      "Risk Analysis"
+    ]
+  },
+
+  "Cloud Engineer": {
+    "description": "Designs and manages cloud infrastructure and deployment environments.",
+    "average_salary": "8-18 LPA",
+    "industry_demand": "Very High",
+    "difficulty": "Medium",
+    "required_skills": [
+      "AWS",
+      "Azure",
+      "Cloud Computing",
+      "Linux",
+      "Docker",
+      "Networking"
+    ]
+  },
+
+  "DevOps Engineer": {
+    "description": "Automates software deployment, infrastructure management, and CI/CD pipelines.",
+    "average_salary": "8-18 LPA",
+    "industry_demand": "Very High",
+    "difficulty": "High",
+    "required_skills": [
+      "Docker",
+      "Kubernetes",
+      "Linux",
+      "AWS",
+      "CI/CD",
+      "Git"
+    ]
+  },
+
+  "Mobile App Developer": {
+    "description": "Develops mobile applications for Android and iOS platforms.",
+    "average_salary": "5-14 LPA",
+    "industry_demand": "High",
+    "difficulty": "Medium",
+    "required_skills": [
+      "Flutter",
+      "Dart",
+      "Android Development",
+      "Firebase",
+      "API Integration"
+    ]
+  },
+
+  "UI/UX Designer": {
+    "description": "Designs user experiences and interfaces that are intuitive and visually appealing.",
+    "average_salary": "4-12 LPA",
+    "industry_demand": "High",
+    "difficulty": "Medium",
+    "required_skills": [
+      "Figma",
+      "Wireframing",
+      "Prototyping",
+      "User Research",
+      "Design Thinking"
+    ]
+  },
+
+  "QA Engineer": {
+    "description": "Tests applications to ensure software quality, reliability, and performance.",
+    "average_salary": "4-10 LPA",
+    "industry_demand": "Medium",
+    "difficulty": "Medium",
+    "required_skills": [
+      "Manual Testing",
+      "Automation Testing",
+      "Selenium",
+      "Test Cases",
+      "Bug Tracking"
+    ]
+  }
+}

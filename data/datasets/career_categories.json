@@ -1,0 +1,37 @@
+{
+  "Artificial Intelligence": [
+    "Data Scientist",
+    "AI/ML Engineer"
+  ],
+
+  "Software Development": [
+    "Frontend Developer",
+    "Backend Developer",
+    "Full Stack Developer"
+  ],
+
+  "Cloud & DevOps": [
+    "Cloud Engineer",
+    "DevOps Engineer"
+  ],
+
+  "Security": [
+    "Cybersecurity Analyst"
+  ],
+
+  "Design": [
+    "UI/UX Designer"
+  ],
+
+  "Mobile Development": [
+    "Mobile App Developer"
+  ],
+
+  "Quality Assurance": [
+    "QA Engineer"
+  ],
+
+  "Analytics": [
+    "Data Analyst"
+  ]
+}

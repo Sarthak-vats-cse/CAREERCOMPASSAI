@@ -1,0 +1,60 @@
+{
+  "Python": 10,
+  "Machine Learning": 10,
+  "Deep Learning": 10,
+  "TensorFlow": 9,
+  "PyTorch": 9,
+  "SQL": 9,
+  "Statistics": 9,
+  "Pandas": 8,
+  "NumPy": 8,
+  "Data Visualization": 8,
+
+  "Excel": 7,
+  "Power BI": 8,
+
+  "HTML": 7,
+  "CSS": 7,
+  "JavaScript": 9,
+  "React": 9,
+  "Responsive Design": 6,
+
+  "FastAPI": 8,
+  "API Development": 8,
+  "Database Management": 8,
+  "Node.js": 8,
+
+  "Git": 5,
+
+  "Networking": 8,
+  "Linux": 8,
+  "Cybersecurity": 10,
+  "Ethical Hacking": 9,
+  "Security Tools": 8,
+  "Risk Analysis": 7,
+
+  "AWS": 9,
+  "Azure": 8,
+  "Cloud Computing": 9,
+  "Docker": 8,
+  "Kubernetes": 9,
+  "CI/CD": 8,
+
+  "Flutter": 8,
+  "Dart": 8,
+  "Android Development": 8,
+  "Firebase": 7,
+  "API Integration": 7,
+
+  "Figma": 8,
+  "Wireframing": 7,
+  "Prototyping": 8,
+  "User Research": 7,
+  "Design Thinking": 8,
+
+  "Manual Testing": 7,
+  "Automation Testing": 8,
+  "Selenium": 8,
+  "Test Cases": 7,
+  "Bug Tracking": 6
+}

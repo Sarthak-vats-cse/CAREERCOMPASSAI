@@ -1,0 +1,47 @@
+{
+  "user_name": "Rahul Sharma",
+
+  "career_readiness_score": 77,
+
+  "readiness_level": "Job Ready",
+
+  "top_career_matches": [
+    {
+      "career": "Data Scientist",
+      "match_percentage": 82
+    },
+    {
+      "career": "AI/ML Engineer",
+      "match_percentage": 74
+    },
+    {
+      "career": "Data Analyst",
+      "match_percentage": 68
+    }
+  ],
+
+  "missing_skills": [
+    "Statistics",
+    "Machine Learning",
+    "Data Visualization"
+  ],
+
+  "recommended_certifications": [
+    "Google Advanced Data Analytics",
+    "Machine Learning Specialization"
+  ],
+
+  "recommended_learning_path": [
+    "Statistics",
+    "Machine Learning",
+    "Data Visualization",
+    "Portfolio Projects"
+  ],
+
+  "career_insight": {
+    "salary": "13-16 LPA",
+    "industry_demand": "Thriving",
+    "entry_barrier": "High",
+    "recommended_for": "Analytical Thinkers"
+  }
+}
