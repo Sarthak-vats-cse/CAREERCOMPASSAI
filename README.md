@@ -73,23 +73,19 @@ git clone https://github.com/Sarthak-vats-cse/CAREERCOMPASSAI.git
 
 ## Step 2
 
-Switch to the backend branch
+Navigate to the Project Directory
+
+```bash
+cd CAREERCOMPASSAI
+```
+
+## Step 3
+
+Switch to the Backend Branch
 
 ```bash
 git checkout backend
 ```
-
----
-
-## Step 3
-
-Open the backend folder
-
-```bash
-cd CareerCompassAI
-```
-
----
 
 ## Step 4
 
