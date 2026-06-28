@@ -55,9 +55,9 @@ def career_match(
 
         ]
 
-        # -----------------------------
-        # Skills Score (40 Marks)
-        # -----------------------------
+        # =====================================
+        # Skills Score (50 Marks)
+        # =====================================
 
         matched = len(
 
@@ -67,47 +67,75 @@ def career_match(
 
         )
 
-        skills_score = (
-            matched /
-            len(required_skills)
-        ) * 40
+        skill_ratio = matched / len(required_skills)
 
-        # -----------------------------
+        if skill_ratio >= 0.80:
+            skills_score = 50
+
+        elif skill_ratio >= 0.65:
+            skills_score = 44
+
+        elif skill_ratio >= 0.50:
+            skills_score = 38
+
+        elif skill_ratio >= 0.35:
+            skills_score = 30
+
+        elif skill_ratio >= 0.20:
+            skills_score = 20
+
+        else:
+            skills_score = 10
+
+        # =====================================
         # CGPA (15 Marks)
-        # -----------------------------
+        # =====================================
 
         cgpa_score = min(
+
             (cgpa / 10) * 15,
+
             15
+
         )
 
-        # -----------------------------
+        # =====================================
         # Projects (15 Marks)
-        # -----------------------------
+        # =====================================
 
         project_score = min(
+
             projects * 3,
+
             15
+
         )
 
-        # -----------------------------
+        # =====================================
         # Certifications (10 Marks)
-        # -----------------------------
+        # =====================================
 
         certification_score = min(
+
             certifications * 5,
+
             10
+
         )
 
-        # -----------------------------
-        # Interest Score (20 Marks)
-        # -----------------------------
+        # =====================================
+        # Career Interest (20 Marks)
+        # =====================================
 
         interest_score = 0
 
         if role.lower() in interests:
 
             interest_score = 20
+
+        # =====================================
+        # Total Score
+        # =====================================
 
         total_score = round(
 
@@ -125,11 +153,35 @@ def career_match(
 
         )
 
+        # =====================================
+        # Score Scaling
+        # =====================================
+
+        if total_score >= 80:
+
+            total_score = min(98, total_score + 2)
+
+        elif total_score >= 60:
+
+            total_score = min(90, total_score + 10)
+
+        elif total_score >= 40:
+
+            total_score = min(75, total_score + 15)
+
+        elif total_score >= 20:
+
+            total_score = min(55, total_score + 10)
+
+        else:
+
+            total_score = min(35, total_score + 5)
+
         matches.append({
 
             "role": role,
 
-            "match_percentage": total_score,
+            "match_percentage": round(total_score, 2),
 
             "salary":
                 career_info[role]["salary"],
@@ -209,6 +261,7 @@ def skill_gap_analysis(
         "match_percentage": round(
 
             (
+
                 len(matched_skills)
 
                 /

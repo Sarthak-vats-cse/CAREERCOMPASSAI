@@ -1,4 +1,5 @@
 import json
+
 from fastapi import APIRouter
 
 from app.models.assessment_model import AssessmentRequest
@@ -23,9 +24,9 @@ router = APIRouter()
 @router.post("/recommendation")
 def recommendation_route(data: AssessmentRequest):
 
-    # --------------------------------
+    # ============================================
     # Career Matching
-    # --------------------------------
+    # ============================================
 
     matches = career_match(
         user_skills=data.skills,
@@ -35,28 +36,30 @@ def recommendation_route(data: AssessmentRequest):
         interests=data.career_interests
     )
 
-    best_career = matches[0]["role"]
+    best_match = matches[0]
 
-    # --------------------------------
+    best_career = best_match["role"]
+
+    # ============================================
     # Skill Gap
-    # --------------------------------
+    # ============================================
 
     skill_gap = skill_gap_analysis(
         data.skills,
         best_career
     )
 
-    # --------------------------------
-    # Roadmap
-    # --------------------------------
+    # ============================================
+    # Learning Roadmap
+    # ============================================
 
     roadmap = get_roadmap(
         best_career
     )
 
-    # --------------------------------
+    # ============================================
     # Readiness
-    # --------------------------------
+    # ============================================
 
     readiness = calculate_readiness(
         cgpa=data.cgpa,
@@ -65,26 +68,86 @@ def recommendation_route(data: AssessmentRequest):
         certifications=data.number_of_certifications
     )
 
-    # --------------------------------
-    # Career Info
-    # --------------------------------
+    # ============================================
+    # Career Information
+    # ============================================
 
     careers, career_info = load_career_data()
 
-    # --------------------------------
+    info = career_info.get(best_career, {})
+
+    # ============================================
     # Certifications
-    # --------------------------------
+    # ============================================
 
     with open(
         "data/datasets/certifications.json",
         "r"
     ) as file:
 
-        certifications = json.load(file)
+        certification_data = json.load(file)
 
-    # --------------------------------
+    # ============================================
+    # Strengths
+    # ============================================
+
+    strengths = []
+
+    if data.cgpa >= 8:
+        strengths.append("Strong Academic Performance")
+
+    if len(data.skills) >= 6:
+        strengths.append("Good Technical Skillset")
+
+    if data.number_of_projects >= 3:
+        strengths.append("Hands-on Project Experience")
+
+    if data.number_of_certifications >= 2:
+        strengths.append("Industry Certifications")
+
+    if len(strengths) == 0:
+        strengths.append("Willingness to Learn")
+
+    # ============================================
+    # Areas to Improve
+    # ============================================
+
+    improvements = []
+
+    if data.cgpa < 7:
+        improvements.append("Improve Academic Performance")
+
+    if data.number_of_projects < 2:
+        improvements.append("Build More Projects")
+
+    if data.number_of_certifications == 0:
+        improvements.append("Earn Industry Certifications")
+
+    improvements.extend(skill_gap["missing_skills"][:3])
+
+    # ============================================
+    # Recommendation Confidence
+    # ============================================
+
+    confidence = round(
+
+        (
+
+            best_match["match_percentage"] * 0.65 +
+
+            readiness["career_readiness_score"] * 0.35
+
+        ),
+
+        2
+
+    )
+
+    confidence = min(confidence, 98)
+
+    # ============================================
     # Final Response
-    # --------------------------------
+    # ============================================
 
     return {
 
@@ -94,31 +157,70 @@ def recommendation_route(data: AssessmentRequest):
         "readiness_level":
             readiness["readiness_level"],
 
-        "top_career_matches": [
+        "recommendation_confidence":
+            confidence,
+
+        "top_career_matches":
+
+        [
 
             {
 
                 "career": match["role"],
 
-                "match_percentage":
-                    match["match_percentage"]
+                "match_percentage": match["match_percentage"]
 
             }
 
-            for match in matches[:3]
+            for match in matches[:5]
 
         ],
 
+        "strengths":
+
+            strengths,
+
+        "areas_to_improve":
+
+            improvements,
+
         "missing_skills":
+
             skill_gap["missing_skills"],
 
         "recommended_learning_path":
+
             roadmap["roadmap"],
 
         "recommended_certifications":
-            certifications.get(best_career, []),
+
+            certification_data.get(
+                best_career,
+                []
+            ),
 
         "career_insight":
-            career_info.get(best_career, {})
+
+        {
+
+            "salary":
+                info.get("salary", ""),
+
+            "industry_demand":
+                info.get("industry_demand", ""),
+
+            "description":
+                info.get("description", ""),
+
+            "entry_barrier":
+                info.get("entry_barrier", ""),
+
+            "work_style":
+                info.get("work_style", ""),
+
+            "recommended_for":
+                info.get("recommended_for", "")
+
+        }
 
     }
