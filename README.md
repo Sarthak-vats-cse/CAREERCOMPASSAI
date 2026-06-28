@@ -1,51 +1,45 @@
 # CAREERCOMPASSAI
+
 # Career Compass AI
 
 Career Compass AI is an AI-powered career guidance platform that helps students identify the most suitable technology career paths based on their skills, academic profile, and interests.
 
 The platform provides:
 
-- Career Recommendations
-- Career Readiness Score
-- Skill Gap Analysis
-- Personalized Learning Roadmap
-- Recommended Certifications
-- Career Explorer
+* Career Recommendations
+* Career Readiness Score
+* Skill Gap Analysis
+* Personalized Learning Roadmap
+* Recommended Certifications
+* Career Explorer
 
 ---
 
 # Tech Stack
 
 ## Frontend
-- HTML
-- CSS
-- JavaScript
+
+* HTML
+* CSS
+* JavaScript
 
 ## Backend
-- Python
-- FastAPI
+
+* Python
+* FastAPI
 
 ---
 
-# Project Structure
+# Repository Structure
 
-```
-Frontend/
-│
-├── css/
-├── js/
-├── assessment.html
-├── explorer.html
-├── index.html
-└── results.html
+This project is maintained using **two Git branches**.
 
-Backend/
-│
-├── app/
-├── data/
-├── main.py
-└── requirements.txt
-```
+| Branch       | Contents                           |
+| ------------ | ---------------------------------- |
+| **frontend** | HTML, CSS, JavaScript files        |
+| **backend**  | FastAPI backend, APIs and datasets |
+
+To run the project successfully, both branches are required.
 
 ---
 
@@ -53,15 +47,45 @@ Backend/
 
 Install the following before running the project:
 
-- Python 3.10 or above
-- Git
-- VS Code (Recommended)
+* Python 3.10+
+* Git
+* VS Code (Recommended)
+* Live Server Extension (VS Code)
 
 ---
 
-# Backend Setup
+# Step 1 - Clone Repository
 
-## Step 1
+```bash
+git clone https://github.com/Sarthak-vats-cse/CAREERCOMPASSAI.git
+```
+
+```bash
+cd CAREERCOMPASSAI
+```
+
+---
+
+# Step 2 - Create Two Separate Project Folders
+
+Create two folders anywhere on your computer.
+
+Example:
+
+```
+CareerCompassAI-Frontend
+CareerCompassAI-Backend
+```
+
+---
+
+# Step 3 - Setup Backend
+
+Open Terminal
+
+```bash
+cd CareerCompassAI-Backend
+```
 
 Clone the repository
 
@@ -69,37 +93,25 @@ Clone the repository
 git clone https://github.com/Sarthak-vats-cse/CAREERCOMPASSAI.git
 ```
 
----
-
-## Step 2
-
-Navigate to the Project Directory
+Move inside the repository
 
 ```bash
 cd CAREERCOMPASSAI
 ```
 
-## Step 3
-
-Switch to the Backend Branch
+Switch to backend branch
 
 ```bash
 git checkout backend
 ```
 
-## Step 4
-
-Create a virtual environment
+Create Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
----
-
-## Step 5
-
-Activate it
+Activate Virtual Environment
 
 Windows
 
@@ -113,27 +125,19 @@ Mac/Linux
 source venv/bin/activate
 ```
 
----
-
-## Step 6
-
 Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## Step 7
-
-Start the FastAPI server
+Run Backend
 
 ```bash
 uvicorn main:app --reload
 ```
 
-The backend will start at
+Backend will run at
 
 ```
 http://127.0.0.1:8000
@@ -145,68 +149,109 @@ Swagger Documentation
 http://127.0.0.1:8000/docs
 ```
 
+**Keep this terminal running throughout the demo.**
+
 ---
 
-# Frontend Setup
+# Step 4 - Setup Frontend
 
-## Step 1
+Open another terminal
 
-Switch to the frontend branch
+Navigate to your frontend folder
+
+```bash
+cd CareerCompassAI-Frontend
+```
+
+Clone repository
+
+```bash
+git clone https://github.com/Sarthak-vats-cse/CAREERCOMPASSAI.git
+```
+
+Move inside repository
+
+```bash
+cd CAREERCOMPASSAI
+```
+
+Switch to frontend branch
 
 ```bash
 git checkout frontend
 ```
 
----
+Open this folder in VS Code.
 
-## Step 2
-
-Open the frontend folder in VS Code.
-
----
-
-## Step 3
-
-Install the Live Server extension (if not already installed).
-
----
-
-## Step 4
-
-Right-click on
+Locate
 
 ```
 index.html
 ```
 
-Select
+Right Click
 
 ```
 Open with Live Server
 ```
 
-The frontend will open in your browser.
+The application will automatically open in your browser.
 
 ---
 
 # Running the Project
 
-1. Start the FastAPI backend.
-2. Open the frontend using Live Server.
-3. Complete the assessment.
-4. View personalized career recommendations and insights.
+For proper functionality:
+
+✅ Keep the FastAPI backend terminal running.
+
+✅ Open the frontend using Live Server.
+
+Both must run simultaneously.
+
+---
+
+# How to Use
+
+1. Open the website.
+2. Click **Start Assessment**.
+3. Select your technical skills.
+4. Enter your CGPA.
+5. Enter the number of projects completed.
+6. Enter the number of certifications.
+7. Select your career interests.
+8. Click **Analyze Career**.
+9. View:
+
+   * Career Readiness Score
+   * Top Career Matches
+   * Skill Gap Analysis
+   * Personalized Learning Roadmap
+   * Recommended Certifications
+   * Career Insights
 
 ---
 
 # Features
 
-- Career Recommendation Engine
-- Readiness Score
-- Skill Gap Detection
-- Learning Roadmap
-- Certification Suggestions
-- Career Explorer Dashboard
-- Responsive UI
+* AI-based Career Recommendation
+* Career Readiness Assessment
+* Skill Gap Detection
+* Personalized Learning Roadmap
+* Certification Suggestions
+* Career Explorer Dashboard
+* Responsive User Interface
+
+---
+
+# Important Note
+
+The frontend communicates with the FastAPI backend using REST APIs.
+
+If the backend server is not running, career recommendations and analysis will not function correctly.
+
+Please ensure the backend server remains running before opening the frontend.
+
 
 ---
 
