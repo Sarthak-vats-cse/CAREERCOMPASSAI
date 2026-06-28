@@ -45,10 +45,6 @@ function initResultsPage() {
                         Start Assessment
                     </a>
 
-                    <a href="resume.html"
-                       class="btn btn-secondary">
-                        Upload Resume
-                    </a>
 
                 </div>
 
