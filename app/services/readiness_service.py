@@ -5,104 +5,102 @@ def calculate_readiness(
     certifications
 ):
 
-    # ==========================================
-    # Skills Score (40%)
-    # ==========================================
+    # -----------------------------
+    # Skills (0-35)
+    # -----------------------------
 
     skill_count = len(skills)
 
-    if skill_count >= 10:
-        skills_score = 100
-    elif skill_count >= 8:
-        skills_score = 90
+    if skill_count >= 8:
+        skills_score = 35
     elif skill_count >= 6:
-        skills_score = 75
+        skills_score = 30
     elif skill_count >= 4:
-        skills_score = 60
+        skills_score = 24
     elif skill_count >= 2:
-        skills_score = 40
+        skills_score = 16
     else:
-        skills_score = 20
+        skills_score = 8
 
-    # ==========================================
-    # Projects Score (25%)
-    # ==========================================
+    # -----------------------------
+    # Projects (0-25)
+    # -----------------------------
 
     if projects >= 5:
-        projects_score = 100
+        projects_score = 25
     elif projects >= 4:
-        projects_score = 85
+        projects_score = 21
     elif projects >= 3:
-        projects_score = 70
+        projects_score = 17
     elif projects >= 2:
-        projects_score = 55
+        projects_score = 12
     elif projects >= 1:
-        projects_score = 35
+        projects_score = 6
     else:
-        projects_score = 10
+        projects_score = 0
 
-    # ==========================================
-    # Certifications Score (15%)
-    # ==========================================
+    # -----------------------------
+    # Certifications (0-15)
+    # -----------------------------
 
     if certifications >= 4:
-        certifications_score = 100
+        certifications_score = 15
     elif certifications >= 3:
-        certifications_score = 80
+        certifications_score = 12
     elif certifications >= 2:
-        certifications_score = 60
+        certifications_score = 9
     elif certifications >= 1:
-        certifications_score = 40
+        certifications_score = 5
     else:
-        certifications_score = 10
+        certifications_score = 0
 
-    # ==========================================
-    # Academic Score (20%)
-    # ==========================================
+    # -----------------------------
+    # CGPA (0-25)
+    # -----------------------------
 
     if cgpa >= 9.5:
-        academic_score = 100
+        academic_score = 25
     elif cgpa >= 9:
-        academic_score = 90
+        academic_score = 22
     elif cgpa >= 8:
-        academic_score = 80
+        academic_score = 18
     elif cgpa >= 7:
-        academic_score = 70
+        academic_score = 14
     elif cgpa >= 6:
-        academic_score = 60
+        academic_score = 10
     else:
-        academic_score = 45
+        academic_score = 5
 
-    # ==========================================
-    # Final Readiness Score
-    # ==========================================
+    # -----------------------------
+    # Final Score
+    # -----------------------------
 
     readiness_score = round(
 
-        skills_score * 0.40 +
+        skills_score +
 
-        projects_score * 0.25 +
+        projects_score +
 
-        certifications_score * 0.15 +
+        certifications_score +
 
-        academic_score * 0.20
+        academic_score
 
     )
 
-    # ==========================================
-    # Readiness Level
-    # ==========================================
+    # -----------------------------
+    # Level
+    # -----------------------------
 
-    if readiness_score >= 90:
+    if readiness_score >= 85:
         level = "Excellent"
 
-    elif readiness_score >= 75:
+    elif readiness_score >= 70:
         level = "Job Ready"
 
-    elif readiness_score >= 60:
+    elif readiness_score >= 55:
         level = "Developing"
 
-    elif readiness_score >= 40:
+    elif readiness_score >= 35:
         level = "Beginner"
 
     else:
