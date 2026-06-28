@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Explorer — Career Compass AI</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div id="navbar-slot"></div>
+
+    <main>
+      <section class="dashboard">
+        <div class="container">
+          <div class="dashboard-header">
+            <h1>Career Explorer</h1>
+            <p>Browse all supported technology careers. Search, filter, and click any card for detailed insights.</p>
+          </div>
+
+          <div class="explorer-controls">
+            <div class="search-box">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="careerSearch" placeholder="Search careers, skills, work style...">
+            </div>
+            <div class="filter-group">
+              <button class="filter-btn active" data-filter="all">All Careers</button>
+              <button class="filter-btn" data-filter="high-demand">High Demand</button>
+              <button class="filter-btn" data-filter="low-barrier">Lower Barrier</button>
+              <button class="filter-btn" data-filter="high-salary">High Salary</button>
+            </div>
+          </div>
+
+          <div class="careers-grid" id="explorerGrid"></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-slot"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/explorer.js"></script>
+</body>
+</html>

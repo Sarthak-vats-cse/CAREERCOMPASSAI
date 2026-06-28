@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results Dashboard — Career Compass AI</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div id="navbar-slot"></div>
+
+    <main>
+      <section class="dashboard">
+        <div class="container">
+          <div class="dashboard-header">
+            <h1>Your Career Results</h1>
+            <p>Personalized career matches, readiness score, and learning recommendations based on your assessment.</p>
+          </div>
+          <div id="resultsContent">
+            <div class="loading-spinner">
+              <div class="spinner"></div>
+              <p>Loading your results...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-slot"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/results.js"></script>
+</body>
+</html>

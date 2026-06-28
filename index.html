@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Compass AI — Find Your Tech Career Path</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div id="navbar-slot"></div>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-badge">✨ AI-Powered Career Guidance</div>
+          <h1 class="hero-title">
+            Discover Your Perfect<br><span>Technology Career</span>
+          </h1>
+          <p class="hero-subtitle">
+            Career Compass AI analyzes your skills, CGPA, projects, and interests to match you with the most suitable tech career paths and build a personalized learning roadmap.
+          </p>
+          <div class="hero-actions">
+            <a href="assessment.html" class="btn btn-primary btn-lg">Start Free Assessment</a>
+            <a href="explorer.html" class="btn btn-secondary btn-lg">Explore Careers</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <span class="section-label">About Us</span>
+              <h2 class="section-title" style="text-align: left;">About Career Compass AI</h2>
+              <p>
+                Career Compass AI is an intelligent career guidance platform designed specifically for students entering the technology industry. We help you cut through the noise and find careers that truly align with your strengths.
+              </p>
+              <p>
+                Our AI engine evaluates your academic performance, technical skills, project portfolio, certifications, and personal interests to deliver actionable insights — not generic advice.
+              </p>
+              <a href="assessment.html" class="btn btn-primary" style="margin-top: 1rem;">Get Started</a>
+            </div>
+            <div class="about-visual">
+              <div class="about-stat-box">
+                <div class="num">6</div>
+                <div class="txt">Core Features</div>
+              </div>
+              <div class="about-stat-box">
+                <div class="num">12</div>
+                <div class="txt">Tech Careers</div>
+              </div>
+              <div class="about-stat-box">
+                <div class="num">0-100</div>
+                <div class="txt">Readiness Score</div>
+              </div>
+              <div class="about-stat-box">
+                <div class="num">AI</div>
+                <div class="txt">Smart Matching</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="section" id="features" style="background: rgba(17, 24, 39, 0.4);">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Features</span>
+            <h2 class="section-title">Everything You Need to Navigate Your Career</h2>
+            <p class="section-desc">From assessment to action plan — Career Compass AI covers every step of your career discovery journey.</p>
+          </div>
+          <div class="features-grid">
+            <div class="card feature-card">
+              <div class="feature-icon">🎯</div>
+              <h3>Career Matching</h3>
+              <p>AI-powered algorithm matches you with the top 3 most suitable tech careers based on your unique profile.</p>
+            </div>
+            <div class="card feature-card">
+              <div class="feature-icon">📊</div>
+              <h3>Career Readiness Scoring</h3>
+              <p>Get a 0–100 readiness score with clear levels: Excellent, Job Ready, Developing, Beginner, or Needs Improvement.</p>
+            </div>
+            <div class="card feature-card">
+              <div class="feature-icon">🔍</div>
+              <h3>Skill Gap Analysis</h3>
+              <p>Identify exactly which skills you're missing for your target career and prioritize what to learn next.</p>
+            </div>
+            <div class="card feature-card">
+              <div class="feature-icon">🗺️</div>
+              <h3>Learning Roadmap</h3>
+              <p>Receive a step-by-step learning path tailored to your career goals — from fundamentals to portfolio.</p>
+            </div>
+            <div class="card feature-card">
+              <div class="feature-icon">🏅</div>
+              <h3>Certification Recommendations</h3>
+              <p>Discover industry-recognized certifications with provider, level, and priority rankings.</p>
+            </div>
+            <div class="card feature-card">
+              <div class="feature-icon">💡</div>
+              <h3>Career Insights</h3>
+              <p>Deep dive into salary ranges, industry demand, entry barriers, work style, and who each career is best for.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Supported Careers -->
+      <section class="section" id="careers">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Careers</span>
+            <h2 class="section-title">12 Supported Tech Careers</h2>
+            <p class="section-desc">Explore in-demand technology roles across data, development, cloud, security, design, and more.</p>
+          </div>
+          <div class="careers-grid" id="landingCareersGrid"></div>
+          <div style="text-align: center; margin-top: 2.5rem;">
+            <a href="explorer.html" class="btn btn-secondary">View All Careers</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-box">
+            <h2>Ready to Find Your Career Path?</h2>
+            <p>Take our free 5-minute assessment and get personalized career matches, skill gap analysis, and a learning roadmap.</p>
+            <a href="assessment.html" class="btn btn-primary btn-lg">Take the Assessment</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-slot"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      mountLayout('index.html');
+      const grid = document.getElementById('landingCareersGrid');
+      grid.innerHTML = CAREERS.slice(0, 6).map(c =>
+        renderCareerCard(c, { onClick: `openCareerModalById('${c.id}')`, compact: true })
+      ).join('');
+    });
+
+    function openCareerModalById(id) {
+      const career = getCareerById(id);
+      if (career) openCareerModal(career);
+    }
+  </script>
+</body>
+</html>
