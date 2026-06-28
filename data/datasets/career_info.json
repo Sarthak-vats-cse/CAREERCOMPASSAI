@@ -1,0 +1,109 @@
+{
+  "Data Scientist": {
+    "salary": "13-16 LPA",
+    "industry_demand": "Thriving",
+    "entry_barrier": "High",
+    "work_style": "Hybrid",
+    "recommended_for": "Analytical Thinkers",
+    "description": "Uses data analysis, statistics, and machine learning to solve business problems and generate actionable insights."
+  },
+
+  "Data Analyst": {
+    "salary": "6-8 LPA",
+    "industry_demand": "Growing",
+    "entry_barrier": "Moderate",
+    "work_style": "Hybrid",
+    "recommended_for": "Data Explorers",
+    "description": "Transforms raw data into meaningful reports, dashboards, and business insights."
+  },
+
+  "AI/ML Engineer": {
+    "salary": "10-18 LPA",
+    "industry_demand": "Exploding",
+    "entry_barrier": "Very High",
+    "work_style": "Flexible",
+    "recommended_for": "AI Enthusiasts",
+    "description": "Designs, trains, and deploys intelligent systems powered by machine learning and artificial intelligence."
+  },
+
+  "Frontend Developer": {
+    "salary": "6-12 LPA",
+    "industry_demand": "Growing",
+    "entry_barrier": "Moderate",
+    "work_style": "Remote Friendly",
+    "recommended_for": "Creative Problem Solvers",
+    "description": "Builds modern, responsive, and user-friendly interfaces for websites and web applications."
+  },
+
+  "Backend Developer": {
+    "salary": "7-14 LPA",
+    "industry_demand": "Thriving",
+    "entry_barrier": "Moderate",
+    "work_style": "Hybrid",
+    "recommended_for": "Logical Thinkers",
+    "description": "Develops APIs, databases, and server-side systems that power modern applications."
+  },
+
+  "Full Stack Developer": {
+    "salary": "6-16 LPA",
+    "industry_demand": "Thriving",
+    "entry_barrier": "High",
+    "work_style": "Flexible",
+    "recommended_for": "Versatile Builders",
+    "description": "Works across both frontend and backend technologies to create complete software solutions."
+  },
+
+  "Cybersecurity Analyst": {
+    "salary": "6-10 LPA",
+    "industry_demand": "Exploding",
+    "entry_barrier": "High",
+    "work_style": "Office Oriented",
+    "recommended_for": "Security Enthusiasts",
+    "description": "Protects systems, networks, and data from cyber threats, attacks, and vulnerabilities."
+  },
+
+  "Cloud Engineer": {
+    "salary": "8-18 LPA",
+    "industry_demand": "Exploding",
+    "entry_barrier": "High",
+    "work_style": "Flexible",
+    "recommended_for": "Infrastructure Thinkers",
+    "description": "Designs, deploys, and manages cloud infrastructure and scalable computing environments."
+  },
+
+  "DevOps Engineer": {
+    "salary": "8-22 LPA",
+    "industry_demand": "Exploding",
+    "entry_barrier": "High",
+    "work_style": "Flexible",
+    "recommended_for": "Automation Enthusiasts",
+    "description": "Automates software delivery, infrastructure management, and deployment pipelines."
+  },
+
+  "Mobile App Developer": {
+    "salary": "7-9 LPA",
+    "industry_demand": "Growing",
+    "entry_barrier": "Moderate",
+    "work_style": "Remote Friendly",
+    "recommended_for": "App Creators",
+    "description": "Develops Android and iOS applications that deliver seamless mobile experiences."
+  },
+
+  "UI/UX Designer": {
+    "salary": "4-12 LPA",
+    "industry_demand": "Established",
+    "entry_barrier": "Moderate",
+    "work_style": "Remote Friendly",
+    "recommended_for": "Creative Designers",
+    "description": "Designs intuitive user experiences and visually appealing digital interfaces."
+  },
+
+  "QA Engineer": {
+    "salary": "3.5-8 LPA",
+    "industry_demand": "Niche",
+    "entry_barrier": "Low",
+    "work_style": "Hybrid",
+    "recommended_for": "Detail-Oriented Testers",
+    "description": "Ensures software quality through testing, automation, defect tracking, and quality assurance processes."
+  }
+}

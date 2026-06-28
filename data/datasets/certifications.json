@@ -1,0 +1,253 @@
+{
+  "Data Scientist": [
+    {
+      "name": "IBM Data Science Professional Certificate",
+      "provider": "IBM",
+      "level": "Intermediate",
+      "priority": "Recommended"
+    },
+    {
+      "name": "Google Advanced Data Analytics",
+      "provider": "Google",
+      "level": "Intermediate",
+      "priority": "Highly Recommended"
+    },
+    {
+      "name": "Machine Learning Specialization",
+      "provider": "DeepLearning.AI",
+      "level": "Advanced",
+      "priority": "Highly Recommended"
+    }
+  ],
+
+  "Data Analyst": [
+    {
+      "name": "Google Data Analytics Professional Certificate",
+      "provider": "Google",
+      "level": "Beginner",
+      "priority": "Highly Recommended"
+    },
+    {
+      "name": "Microsoft Power BI Data Analyst Associate",
+      "provider": "Microsoft",
+      "level": "Intermediate",
+      "priority": "Recommended"
+    },
+    {
+      "name": "IBM Data Analyst Professional Certificate",
+      "provider": "IBM",
+      "level": "Beginner",
+      "priority": "Recommended"
+    }
+  ],
+
+  "AI/ML Engineer": [
+    {
+      "name": "Machine Learning Specialization",
+      "provider": "DeepLearning.AI",
+      "level": "Intermediate",
+      "priority": "Highly Recommended"
+    },
+    {
+      "name": "Deep Learning Specialization",
+      "provider": "DeepLearning.AI",
+      "level": "Advanced",
+      "priority": "Highly Recommended"
+    },
+    {
+      "name": "Google AI Essentials",
+      "provider": "Google",
+      "level": "Beginner",
+      "priority": "Recommended"
+    }
+  ],
+
+  "Frontend Developer": [
+    {
+      "name": "Meta Front-End Developer Professional Certificate",
+      "provider": "Meta",
+      "level": "Beginner",
+      "priority": "Highly Recommended"
+    },
+    {
+      "name": "JavaScript Algorithms and Data Structures",
+      "provider": "freeCodeCamp",
+      "level": "Intermediate",
+      "priority": "Recommended"
+    },
+    {
+      "name": "Responsive Web Design Certification",
+      "provider": "freeCodeCamp",
+      "level": "Beginner",
+      "priority": "Recommended"
+    }
+  ],
+
+  "Backend Developer": [
+    {
+      "name": "Python for Everybody Specialization",
+      "provider": "University of Michigan",
+      "level": "Beginner",
+      "priority": "Highly Recommended"
+    },
+    {
+      "name": "Backend Development and APIs",
+      "provider": "freeCodeCamp",
+      "level": "Intermediate",
+      "priority": "Recommended"
+    },
+    {
+      "name": "AWS Certified Developer Associate",
+      "provider": "AWS",
+      "level": "Advanced",
+      "priority": "Recommended"
+    }
+  ],
+
+  "Full Stack Developer": [
+    {
+      "name": "Meta Full Stack Developer Professional Certificate",
+      "provider": "Meta",
+      "level": "Intermediate",
+      "priority": "Highly Recommended"
+    },
+    {
+      "name": "Full Stack Web Development Specialization",
+      "provider": "Coursera",
+      "level": "Intermediate",
+      "priority": "Recommended"
+    },
+    {
+      "name": "AWS Certified Developer Associate",
+      "provider": "AWS",
+      "level": "Advanced",
+      "priority": "Recommended"
+    }
+  ],
+
+  "Cybersecurity Analyst": [
+    {
+      "name": "Google Cybersecurity Professional Certificate",
+      "provider": "Google",
+      "level": "Beginner",
+      "priority": "Highly Recommended"
+    },
+    {
+      "name": "CompTIA Security+",
+      "provider": "CompTIA",
+      "level": "Intermediate",
+      "priority": "Highly Recommended"
+    },
+    {
+      "name": "Certified Ethical Hacker (CEH)",
+      "provider": "EC-Council",
+      "level": "Advanced",
+      "priority": "Recommended"
+    }
+  ],
+
+  "Cloud Engineer": [
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "provider": "AWS",
+      "level": "Beginner",
+      "priority": "Highly Recommended"
+    },
+    {
+      "name": "AWS Solutions Architect Associate",
+      "provider": "AWS",
+      "level": "Intermediate",
+      "priority": "Highly Recommended"
+    },
+    {
+      "name": "Microsoft Azure Fundamentals",
+      "provider": "Microsoft",
+      "level": "Beginner",
+      "priority": "Recommended"
+    }
+  ],
+
+  "DevOps Engineer": [
+    {
+      "name": "Docker Certified Associate",
+      "provider": "Docker",
+      "level": "Intermediate",
+      "priority": "Recommended"
+    },
+    {
+      "name": "AWS Certified DevOps Engineer",
+      "provider": "AWS",
+      "level": "Advanced",
+      "priority": "Highly Recommended"
+    },
+    {
+      "name": "Kubernetes and Cloud Native Associate",
+      "provider": "CNCF",
+      "level": "Intermediate",
+      "priority": "Highly Recommended"
+    }
+  ],
+
+  "Mobile App Developer": [
+    {
+      "name": "Flutter Development Bootcamp",
+      "provider": "Udemy",
+      "level": "Beginner",
+      "priority": "Highly Recommended"
+    },
+    {
+      "name": "Android Developer Certification",
+      "provider": "Google",
+      "level": "Intermediate",
+      "priority": "Recommended"
+    },
+    {
+      "name": "Firebase Certification",
+      "provider": "Google",
+      "level": "Intermediate",
+      "priority": "Recommended"
+    }
+  ],
+
+  "UI/UX Designer": [
+    {
+      "name": "Google UX Design Professional Certificate",
+      "provider": "Google",
+      "level": "Beginner",
+      "priority": "Highly Recommended"
+    },
+    {
+      "name": "Figma UI/UX Design Certification",
+      "provider": "Figma",
+      "level": "Intermediate",
+      "priority": "Recommended"
+    },
+    {
+      "name": "Interaction Design Foundation UX Certification",
+      "provider": "Interaction Design Foundation",
+      "level": "Advanced",
+      "priority": "Recommended"
+    }
+  ],
+
+  "QA Engineer": [
+    {
+      "name": "ISTQB Foundation Level",
+      "provider": "ISTQB",
+      "level": "Beginner",
+      "priority": "Highly Recommended"
+    },
+    {
+      "name": "Selenium WebDriver Certification",
+      "provider": "Selenium",
+      "level": "Intermediate",
+      "priority": "Recommended"
+    },
+    {
+      "name": "Software Testing Certification",
+      "provider": "Coursera",
+      "level": "Beginner",
+      "priority": "Recommended"
+    }
+  ]
+}

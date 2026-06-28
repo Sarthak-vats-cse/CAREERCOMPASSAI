@@ -1,0 +1,144 @@
+{
+  "Data Scientist": [
+    "Python Fundamentals",
+    "Statistics",
+    "SQL",
+    "Pandas & NumPy",
+    "Machine Learning",
+    "Data Visualization",
+    "Build Data Science Projects",
+    "Portfolio Creation",
+    "Interview Preparation"
+  ],
+
+  "Data Analyst": [
+    "Excel",
+    "SQL",
+    "Power BI",
+    "Statistics",
+    "Python Basics",
+    "Dashboard Projects",
+    "Portfolio Creation",
+    "Interview Preparation"
+  ],
+
+  "AI/ML Engineer": [
+    "Python",
+    "Statistics",
+    "Machine Learning",
+    "Deep Learning",
+    "TensorFlow",
+    "PyTorch",
+    "AI Projects",
+    "Model Deployment",
+    "Interview Preparation"
+  ],
+
+  "Frontend Developer": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Responsive Design",
+    "React",
+    "Git & GitHub",
+    "Frontend Projects",
+    "Portfolio Website",
+    "Interview Preparation"
+  ],
+
+  "Backend Developer": [
+    "Python",
+    "SQL",
+    "Database Design",
+    "API Development",
+    "FastAPI",
+    "Authentication Systems",
+    "Backend Projects",
+    "Deployment",
+    "Interview Preparation"
+  ],
+
+  "Full Stack Developer": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Backend Development",
+    "Databases",
+    "Full Stack Projects",
+    "Deployment",
+    "Interview Preparation"
+  ],
+
+  "Cybersecurity Analyst": [
+    "Networking Fundamentals",
+    "Linux",
+    "Cybersecurity Basics",
+    "Ethical Hacking",
+    "Security Tools",
+    "Risk Assessment",
+    "Security Projects",
+    "Certifications",
+    "Interview Preparation"
+  ],
+
+  "Cloud Engineer": [
+    "Linux",
+    "Networking",
+    "Cloud Computing",
+    "AWS",
+    "Azure",
+    "Docker",
+    "Cloud Projects",
+    "Deployment",
+    "Interview Preparation"
+  ],
+
+  "DevOps Engineer": [
+    "Linux",
+    "Git",
+    "Docker",
+    "CI/CD",
+    "Kubernetes",
+    "AWS",
+    "Infrastructure Automation",
+    "DevOps Projects",
+    "Interview Preparation"
+  ],
+
+  "Mobile App Developer": [
+    "Programming Fundamentals",
+    "Dart",
+    "Flutter",
+    "Firebase",
+    "API Integration",
+    "Mobile UI Design",
+    "App Projects",
+    "Play Store Deployment",
+    "Interview Preparation"
+  ],
+
+  "UI/UX Designer": [
+    "Design Thinking",
+    "User Research",
+    "Wireframing",
+    "Figma",
+    "Prototyping",
+    "UI Design",
+    "Case Studies",
+    "Portfolio Creation",
+    "Interview Preparation"
+  ],
+
+  "QA Engineer": [
+    "Software Testing Basics",
+    "Test Cases",
+    "Bug Tracking",
+    "Manual Testing",
+    "Automation Testing",
+    "Selenium",
+    "Testing Projects",
+    "Certification",
+    "Interview Preparation"
+  ]
+}
