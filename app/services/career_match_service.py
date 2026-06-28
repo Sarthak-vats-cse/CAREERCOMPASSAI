@@ -34,12 +34,12 @@ def career_match(
         interests = []
 
     user_skills = [
-        skill.lower()
+        skill.lower().strip()
         for skill in user_skills
     ]
 
     interests = [
-        interest.lower()
+        interest.lower().strip()
         for interest in interests
     ]
 
@@ -49,93 +49,59 @@ def career_match(
 
         required_skills = [
 
-            skill.lower()
+            skill.lower().strip()
 
             for skill in details["required_skills"]
 
         ]
 
-        # =====================================
-        # Skills Score (50 Marks)
-        # =====================================
+        # ===================================
+        # Skill Match (55 Marks)
+        # ===================================
 
         matched = len(
-
             set(user_skills).intersection(
                 set(required_skills)
             )
-
         )
 
         skill_ratio = matched / len(required_skills)
 
-        if skill_ratio >= 0.80:
-            skills_score = 50
+        skills_score = skill_ratio * 55
 
-        elif skill_ratio >= 0.65:
-            skills_score = 44
-
-        elif skill_ratio >= 0.50:
-            skills_score = 38
-
-        elif skill_ratio >= 0.35:
-            skills_score = 30
-
-        elif skill_ratio >= 0.20:
-            skills_score = 20
-
-        else:
-            skills_score = 10
-
-        # =====================================
+        # ===================================
         # CGPA (15 Marks)
-        # =====================================
+        # ===================================
 
-        cgpa_score = min(
+        cgpa_score = (cgpa / 10) * 15
 
-            (cgpa / 10) * 15,
-
-            15
-
-        )
-
-        # =====================================
-        # Projects (15 Marks)
-        # =====================================
+        # ===================================
+        # Projects (10 Marks)
+        # ===================================
 
         project_score = min(
-
-            projects * 3,
-
-            15
-
+            projects * 2,
+            10
         )
 
-        # =====================================
+        # ===================================
         # Certifications (10 Marks)
-        # =====================================
+        # ===================================
 
         certification_score = min(
-
-            certifications * 5,
-
+            certifications * 2,
             10
-
         )
 
-        # =====================================
-        # Career Interest (20 Marks)
-        # =====================================
+        # ===================================
+        # Career Interest (10 Marks)
+        # ===================================
 
         interest_score = 0
 
         if role.lower() in interests:
 
-            interest_score = 20
-
-        # =====================================
-        # Total Score
-        # =====================================
+            interest_score = 10
 
         total_score = round(
 
@@ -153,35 +119,15 @@ def career_match(
 
         )
 
-        # =====================================
-        # Score Scaling
-        # =====================================
-
-        if total_score >= 80:
-
-            total_score = min(98, total_score + 2)
-
-        elif total_score >= 60:
-
-            total_score = min(90, total_score + 10)
-
-        elif total_score >= 40:
-
-            total_score = min(75, total_score + 15)
-
-        elif total_score >= 20:
-
-            total_score = min(55, total_score + 10)
-
-        else:
-
-            total_score = min(35, total_score + 5)
-
         matches.append({
 
             "role": role,
 
-            "match_percentage": round(total_score, 2),
+            "match_percentage": total_score,
+
+            "matched_skills": matched,
+
+            "required_skills": len(required_skills),
 
             "salary":
                 career_info[role]["salary"],
@@ -196,8 +142,7 @@ def career_match(
 
     matches.sort(
 
-        key=lambda x:
-            x["match_percentage"],
+        key=lambda x: x["match_percentage"],
 
         reverse=True
 
@@ -213,9 +158,9 @@ def skill_gap_analysis(
 
     careers, career_info = load_career_data()
 
-    user_skills_lower = [
+    user_skills = [
 
-        skill.lower()
+        skill.lower().strip()
 
         for skill in user_skills
 
@@ -229,9 +174,7 @@ def skill_gap_analysis(
 
         target_role = best_match["role"]
 
-    required_skills = careers[
-        target_role
-    ]["required_skills"]
+    required_skills = careers[target_role]["required_skills"]
 
     matched_skills = []
 
@@ -239,7 +182,7 @@ def skill_gap_analysis(
 
     for skill in required_skills:
 
-        if skill.lower() in user_skills_lower:
+        if skill.lower() in user_skills:
 
             matched_skills.append(skill)
 
@@ -247,31 +190,30 @@ def skill_gap_analysis(
 
             missing_skills.append(skill)
 
+    percentage = round(
+
+        (
+
+            len(matched_skills)
+
+            /
+
+            len(required_skills)
+
+        ) * 100,
+
+        2
+
+    )
+
     return {
 
-        "target_role":
-            target_role,
+        "target_role": target_role,
 
-        "matched_skills":
-            matched_skills,
+        "matched_skills": matched_skills,
 
-        "missing_skills":
-            missing_skills,
+        "missing_skills": missing_skills,
 
-        "match_percentage": round(
-
-            (
-
-                len(matched_skills)
-
-                /
-
-                len(required_skills)
-
-            ) * 100,
-
-            2
-
-        )
+        "match_percentage": percentage
 
     }
